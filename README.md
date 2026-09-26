@@ -1,5 +1,5 @@
 # Edge-only plane cubic augmentation → Plane cubic augmentation allowing new vertices
 
-Independent research campaign for the [fixed question](campaigns/plane-three-connected-cubic-augmentation/question.md). [State](campaigns/plane-three-connected-cubic-augmentation/state.md) records the current evidence and next action.
+Independent campaign for the [fixed question](campaigns/plane-three-connected-cubic-augmentation/question.md). [State](campaigns/plane-three-connected-cubic-augmentation/state.md) records progress. [Partial Prepare evidence](campaigns/plane-three-connected-cubic-augmentation/work/preparation.md) includes a fixed 112-graph source corpus and exact small-graph edge-only checks.
 
-The initial commit fixes the question and setup. Prepare is pending; no solution is claimed. Run the campaign from this repository and follow `AGENTS.md`.
+Prepare is blocked on a conclusive added-vertex target oracle. No reduction or solution is claimed. Reproduce the source checks with `uv sync --locked` and `uv run --locked python campaigns/plane-three-connected-cubic-augmentation/work/check.py --self-test`.
