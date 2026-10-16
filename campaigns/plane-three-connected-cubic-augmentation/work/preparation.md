@@ -1,3 +1,5 @@
+> Definition update 2026-10-16: this document preserves the earlier partial executable preparation. The current mathematical decision challenge is specified in [the formal definition](../formal/README.md); the finite corpus and pending oracle work below do not restrict that definition.
+
 # Partial Prepare evidence
 
 Recorded 2026-09-26. The fixed source corpus contains 112 distinct connected plane graphs: 12 hand cases and 100 seeded random cases, with 58 YES and 54 NO. Sizes range from one to eight vertices. Positive random cases are connected edge-deleted subgraphs of an embedded cube and can restore deleted edges. Negative random cases have seven vertices, so an edge-only cubic supergraph is impossible by degree parity. `generate_cases.py` fixes cases and seeds before candidate construction.

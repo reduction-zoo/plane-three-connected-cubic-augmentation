@@ -1,0 +1,14 @@
+{
+  "status": "statement built; open reduction unproved",
+  "checked_on": "2026-10-16",
+  "build": "passed: Lean 4.35.0 and pinned Mathlib",
+  "semantic_checks": "passed: Tests.lean",
+  "definition_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "open_theorem_axiom": "sorryAx",
+  "comparator": "not run: Linux bubblewrap unavailable on macOS",
+  "solution_verified": false
+}

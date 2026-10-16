@@ -1,3 +1,5 @@
+> Definition update 2026-10-16: the current literature-based decision problem is in [the campaign question](../campaigns/plane-three-connected-cubic-augmentation/question.md) and [the Lean challenge notes](../campaigns/plane-three-connected-cubic-augmentation/formal/README.md). The imported research setup below is retained for provenance; its earlier witness serialization and preparation requirements do not restrict the current decision definition.
+
 ---
 status: proof-route-hold
 openness: unverified

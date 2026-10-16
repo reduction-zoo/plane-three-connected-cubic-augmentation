@@ -1,0 +1,52 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "plane-three-connected-cubic-augmentation: open decision challenge",
+    "description": "Literature-based problem definitions and an unproved polynomial-time reduction goal.",
+    "authors": [],
+    "responsible_maintainers": [],
+    "license": null
+  },
+  "sources": [
+    {
+      "title": "Recognition Complexity of Subgraphs of k-Connected Planar Cubic Graphs",
+      "id": "https://publikationen.bibliothek.kit.edu/1000188407/170710540",
+      "type": "paper",
+      "relationship": "Sections 1\u20132, Theorem 6.2 proof, Question 7.1"
+    },
+    {
+      "title": "Regular Augmentation of Planar Graphs",
+      "id": "https://arxiv.org/pdf/1209.3865",
+      "type": "paper",
+      "relationship": "Fixed-embedding edge-only augmentation definition"
+    }
+  ],
+  "status": {
+    "scope": "Definitions and open statement only; no reduction proved.",
+    "sorry_count": 1,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice",
+      "sorryAx"
+    ]
+  },
+  "fidelity": {
+    "divergences": "The input is a finite loopless subcubic plane multigraph represented by rational polygonal edge arcs, not a fixed straight-line drawing. This is a concrete representative of the topological embedding; bends are allowed, disconnected components and their actual nesting are retained, and new arcs may have arbitrarily many rational bends. Augmentations retain the old drawing exactly and may add edges between old vertices as well as new vertices. The source forbids new vertices; the target allows them. Both return Boolean decisions. Parallel edges are permitted as in the paper, but no loops or overlapping arcs. Three-connectivity requires at least four vertices. Rational polygonal representatives impose no geometric straight-line restriction on topological plane embeddings. Theorem 6.2 supplies a linear-size certificate construction for the augmentation problem; no bounded oracle is needed to state existence."
+  },
+  "review": {
+    "status": "Local build, semantic examples and axiom audit passed; Linux comparator pending",
+    "reviewers": []
+  },
+  "alignment": {
+    "namespace": "PlaneAugmentation",
+    "statements": [
+      {
+        "lean": "PlaneAugmentation.solve",
+        "module": "Challenge",
+        "status": "open"
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "Q034",
-  "source_definition": "The source gives a fixed plane graph. Its outputs are three-connected cubic augmentations adding only edges while extending the embedding, or NO-SOLUTION.",
-  "target_definition": "The target is a fixed plane graph and asks for a three-connected cubic supergraph extending its embedding, allowing additional vertices and edges. The source version permits only additional edges. Valid augmentations require a finite combinatorial embedding encoding.",
-  "required_result": "Construct deterministic polynomial-time maps F and G: F sends every legal source instance to a legal target instance, and G(x,y) is a valid source output for every valid output y of F(x). Preserve the stated threshold, domain and promises. The requested complexity conclusion is NP-hardness for the stated target problem.",
+  "source_definition": "Given a finite loopless subcubic plane graph, with parallel edges permitted and its full topological embedding fixed, output YES exactly when adding edges on the same vertex set can produce a three-vertex-connected cubic plane supergraph extending that embedding, and NO otherwise. The embedding includes disconnected-component nesting, face boundaries and the outer face. A finite rational polygonal drawing represents it; edges may bend.",
+  "target_definition": "Given the same kind of fixed plane input, output YES exactly when some finite three-vertex-connected cubic plane supergraph extends its embedding, allowing both additional vertices and additional edges, and NO otherwise. Three-connectivity requires at least four vertices. The graph is a subgraph, not necessarily induced. All disconnected components and their nesting must be preserved. Rational polygonal edge arcs represent topological embeddings; straight-line geometry is not fixed.",
+  "required_result": "Construct a deterministic polynomial-time map F from the edge-only fixed-embedding three-connected cubic augmentation decision problem to its variant allowing new vertices, preserving YES and NO. Boolean-answer recovery G is the identity. The requested conclusion is NP-hardness of the fixed-embedding target.",
   "equation": ""
 }
